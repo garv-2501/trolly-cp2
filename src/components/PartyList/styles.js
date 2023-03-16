@@ -16,7 +16,7 @@ export default makeStyles((theme) => ({
         alignItems: "center",
     },
     container: {
-        padding: "25px",
+        padding: "15px 25px 0px 12px",
     },
     marginBottom: {
         marginBottom: "30px",
@@ -24,5 +24,18 @@ export default makeStyles((theme) => ({
     list: {
         height: "75vh",
         overflow: "auto",
+        scrollbarWidth: "thin",
+        scrollbarColor: `${theme.palette.primary.main} ${theme.palette.background.default}`,
+        "&::-webkit-scrollbar": {
+            width: "10px",
+        },
+        "&::-webkit-scrollbar-thumb": {
+            backgroundColor: theme.palette.primary.main,
+            borderRadius: "6px",
+        },
+        "&::-webkit-scrollbar-track": {
+            backgroundColor: theme.palette.background.default,
+            borderRadius: "6px",
+        },
     },
 }));

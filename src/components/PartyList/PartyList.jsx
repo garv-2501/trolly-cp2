@@ -1,4 +1,9 @@
+// CODE AND INSPIRATION FROM:
+// https://youtu.be/7GO4P0ewVfI
+// https://youtu.be/UKdQjQX1Pko
+
 import React from "react";
+import img1 from "../../img/test.jpg";
 import {
     CircularProgress,
     Grid,
@@ -10,7 +15,6 @@ import {
 } from "@material-ui/core";
 
 import PartyDetails from "../PartyDetails/PartyDetails";
-
 import useStyles from "./styles";
 
 const PartyList = () => {
@@ -19,14 +23,14 @@ const PartyList = () => {
     const [rating, setRating] = React.useState("");
 
     const parties = [
-        { name: "Event 1", description: "This is a description" },
-        { name: "Event 2", description: "This is a description" },
-        { name: "Event 3", description: "This is a description" },
-        { name: "Event 4", description: "This is a description" },
-        { name: "Event 5", description: "This is a description" },
-        { name: "Event 6", description: "This is a description" },
-        { name: "Event 7", description: "This is a description" },
-        { name: "Event 8", description: "This is a description" },
+        { name: "Event 1", description: "This is a description", image: img1 },
+        { name: "Event 2", description: "This is a description", image: img1 },
+        { name: "Event 3", description: "This is a description", image: img1 },
+        { name: "Event 4", description: "This is a description", image: img1 },
+        { name: "Event 5", description: "This is a description", image: img1 },
+        { name: "Event 6", description: "This is a description", image: img1 },
+        { name: "Event 7", description: "This is a description", image: img1 },
+        { name: "Event 8", description: "This is a description", image: img1 },
     ];
 
     return (

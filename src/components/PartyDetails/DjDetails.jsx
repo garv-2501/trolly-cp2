@@ -1,5 +1,4 @@
 import React from "react";
-import cardImg from "../../img/test.jpg";
 import {
     Card,
     CardContent,

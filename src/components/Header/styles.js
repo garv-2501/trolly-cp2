@@ -37,11 +37,14 @@ export default makeStyles((theme) => ({
         paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
         transition: theme.transitions.create("width"),
         width: "100%",
-        [theme.breakpoints.up("md")]: { width: "20ch" },
+        [theme.breakpoints.up("md")]: { width: "13ch" },
     },
     toolbar: {
+        // display: "flex",
+        // justifyContent: "space-between",
+        // backgroundColor: "#1c1018",
+
         display: "flex",
         justifyContent: "space-between",
-        backgroundColor: "#1c1018",
     },
 }));
