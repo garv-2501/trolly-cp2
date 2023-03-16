@@ -10,7 +10,7 @@ const Map = () => {
     const classes = useStyles();
     const isMobile = useMediaQuery("(min-width:600px)");
 
-    const coordinates = { lat: 0, lng: 0 };
+    const coordinates = { lat: 51.509865, lng: 0.118092 };
 
     return (
         <div className={classes.mapContainer}>
@@ -20,7 +20,7 @@ const Map = () => {
                     key: "AIzaSyB2qW60yyjjTiaQvDwvYcrhiYMTv4wuYXo",
                 }}
                 defaultCenter={coordinates}
-                defaultZoom={14}
+                defaultZoom={12}
                 margin={[50, 50, 50, 50]}
                 options={""}
                 onChange={""}
