@@ -17,7 +17,7 @@ const Map = () => {
             <GoogleMapReact
                 // convert to env variable
                 bootstrapURLKeys={{
-                    key: "AIzaSyB2qW60yyjjTiaQvDwvYcrhiYMTv4wuYXo",
+                    key: "",
                 }}
                 defaultCenter={coordinates}
                 defaultZoom={12}
